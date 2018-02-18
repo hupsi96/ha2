@@ -1,0 +1,87 @@
+######## GROUPS ########
+
+
+group.bett:
+  friendly_name: Bett
+
+group.ambiente:
+  friendly_name: Ambiente
+
+group.deckenlampe:
+  friendly_name: Deckenlampe
+
+group.schreibtisch:
+  friendly_name: Schreibtisch
+
+group.weltkarte:
+  friendly_name: Weltkarte
+
+group.christian_zimmer:
+  friendly_name: Christian Zimmer
+
+group.licht_christian:
+  friendly_name: Licht Christian
+
+group.esstisch:
+  friendly_name: Esstisch
+
+group.filo:
+  friendly_name: Filo
+
+group.fado:
+  friendly_name: Fado
+
+group.stehlampe:
+  friendly_name: Stehlampe
+
+group.wohnzimmer_licht:
+  friendly_name: Wohnzimmer Licht
+
+group.flur:
+  friendly_name: Flur
+
+group.sensor:
+  friendly_name: Sensor
+
+###### MEDIA ##########
+
+
+media_player.wohnzimmer:
+  friendly_name: Bose
+  emulated_hue: true
+  emulated_hue_name: Bose
+  homebridge_visible: true
+
+media_player.fernseher_oben:
+  emulated_hue: true
+  emulated_hue_name: Fernseher Wohnzimmer
+  homebridge_visible: true
+
+######## LIGHT ##########
+
+
+light.weltkarte:
+  emulated_hue_hidden: false
+  emulated_hue_name: Weltkarte
+  homebridge_visible: true
+
+light.schrank:
+  emulated_hue_hidden: false
+  emulated_hue_name: Schrank
+  homebridge_visible: true
+
+light.schreibtisch_led:
+  friendly_name: Schreibtisch LED
+  emulated_hue_hidden: false
+  emulated_hue_name: Schreibtisch LED
+  homebridge_visible: true
+
+light.regal:
+  emulated_hue_hidden: false
+  emulated_hue_name: Regal
+  homebridge_visible: true
+
+light.bett:
+  emulated_hue_hidden: false
+  emulated_hue_name: Bett
+  homebridge_visible: true

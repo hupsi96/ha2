@@ -1,0 +1,24 @@
+
+  - alias: 'Bose turned on'
+    trigger:
+      platform: state
+      entity_id: media_player.wohnzimmer
+      from: 'playing'
+      to: 'off'
+    action:
+      service: media_player.turn_on
+      entity_id:
+        - media_player.wohnzimmer
+
+  - alias: 'Tagmodus'
+    trigger:
+      platform: state
+      entity_id: sensor.zimmer_bewegung
+      to: 'True'
+    action:
+      service: group.turn_on
+      entity_id:
+        - group.bett
+      data:
+        brightness: 250
+        rgb_color: [255,150,0]

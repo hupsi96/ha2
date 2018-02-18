@@ -1,0 +1,109 @@
+christian_zimmer:
+  view: yes
+  entities:
+    - sensor.yr_symbol
+    - sun.sun
+    - group.licht_christian
+    - group.ambiente
+    - group.schreibtisch
+    - group.deckenlampe
+    - group.bett
+    - group.weltkarte
+    - group.sensor
+
+wohnzimmer:
+  view: yes
+  entities:
+    - sensor.yr_symbol
+    - sun.sun
+    - group.wohnzimmer_licht
+    - group.esstisch
+    - group.fado
+    - group.filo
+    - group.stehlampe
+    - group.media
+
+licht_christian:
+  entities:
+    - group.ambiente
+    - group.schreibtisch
+    - group.deckenlampe
+    - group.bett
+    - group.weltkarte
+
+ambiente:
+  entities:
+    - light.balon_links
+    - light.balon_rechts
+    - light.regal
+    - light.schrank
+
+schreibtisch:
+  entities:
+    - light.schreibtisch_led
+    - light.schreibtisch_lampe
+
+deckenlampe:
+  entities:
+    - light.deckenlampe_1
+    - light.deckenlampe_2
+    - light.deckenlampe_3
+
+bett:
+  entities:
+    - light.bett
+
+weltkarte:
+  entities:
+    - light.weltkarte
+
+esstisch:
+  entities:
+    - light.esstisch_1
+    - light.esstisch_2
+
+fado:
+  entities:
+    - light.fado_1
+    - light.fado_bank
+
+filo:
+  entities:
+    - light.filo
+
+stehlampe:
+  entities:
+    - light.stehlampe_klein
+    - light.stehlampe_oben
+
+media:
+  entities:
+    - media_player.fernseher_oben
+    - media_player.wohnzimmer
+
+flur:
+  entities:
+    - light.flur
+
+gang:
+  view: yes
+  entities:
+    - sensor.yr_symbol
+    - sun.sun
+    - group.flur
+
+wohnzimmer_licht:
+  entities:
+    - group.esstisch
+    - group.fado
+    - group.filo
+    - group.stehlampe
+    - group.media
+
+sensor:
+  entities:
+    - sensor.tageslicht
+    - sensor.zimmer_bewegung
+    - sensor.zimmer_temperatur
+    - sensor.zimmer_helligkeit
+    - sesor.bewegungsmelder_akku
