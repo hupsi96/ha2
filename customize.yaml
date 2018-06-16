@@ -64,27 +64,32 @@ light.weltkarte:
   emulated_hue_hidden: false
   emulated_hue_name: Weltkarte
   homebridge_visible: true
+  assumed_state: false
 
 light.schrank:
   emulated_hue_hidden: false
   emulated_hue_name: Schrank
   homebridge_visible: true
+  assumed_state: false
 
 light.schreibtisch_led:
   friendly_name: Schreibtisch LED
   emulated_hue_hidden: false
   emulated_hue_name: Schreibtisch LED
   homebridge_visible: true
-
+  assumed_state: false
+ 
 light.regal:
   emulated_hue_hidden: false
   emulated_hue_name: Regal
   homebridge_visible: true
+  assumed_state: false
 
 light.bett:
   emulated_hue_hidden: false
   emulated_hue_name: Bett
   homebridge_visible: true
+  assumed_state: false
 
 automation.nachtmodus:
   emulated_hue_hidden: false

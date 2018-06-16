@@ -23,7 +23,7 @@
           state: 'off'
         - condition: numeric_state
           entity_id: sensor.zimmer_helligkeit
-          below: '1000'
+          below: '5000'
     action:
       - service: light.turn_on
         entity_id:
