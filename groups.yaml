@@ -9,7 +9,9 @@ christian_zimmer:
     - group.deckenlampe
     - group.bett
     - group.weltkarte
+    - group.iphonex
     - group.sensor
+    - group.modus
 
 wohnzimmer:
   view: yes
@@ -107,3 +109,14 @@ sensor:
     - sensor.zimmer_temperatur
     - sensor.zimmer_helligkeit
     - sesor.bewegungsmelder_akku
+
+iphonex:
+  entities:
+    - sensor.iphone_von_christian_battery_level
+    - sensor.iphone_von_christian_battery_state
+    - device_tracker.iphone_x
+
+modus:
+  entities:
+    - automation.tagmodus
+    - automation.nachtmodus

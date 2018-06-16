@@ -85,3 +85,12 @@ light.bett:
   emulated_hue_hidden: false
   emulated_hue_name: Bett
   homebridge_visible: true
+
+automation.nachtmodus:
+  emulated_hue_hidden: false
+  emulated_hue_name: Nachtmodus
+
+automation.tagmodus:
+  emulated_hue_hidden: false
+  emulated_hue_name: Tagmodus
+

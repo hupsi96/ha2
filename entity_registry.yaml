@@ -1,0 +1,75 @@
+light.esstisch_2:
+  platform: hue
+  unique_id: 00:17:88:01:03:53:3a:f5-0b
+light.fado_bank:
+  platform: hue
+  unique_id: 00:17:88:01:03:fd:62:c7-0b
+light.esstisch_1:
+  platform: hue
+  unique_id: 00:17:88:01:03:50:41:49-0b
+light.deckenlampe_3:
+  platform: hue
+  unique_id: 00:17:88:01:02:b0:33:3a-0b
+light.stehlampe_oben:
+  platform: hue
+  unique_id: 00:17:88:01:02:8f:dd:47-0b
+light.deckenlampe_1:
+  platform: hue
+  unique_id: 00:17:88:01:02:b0:33:37-0b
+light.schreibtisch_lampe:
+  platform: hue
+  unique_id: 00:17:88:01:02:9b:56:d6-0b
+light.gang:
+  platform: hue
+  unique_id: 00:17:88:01:03:fc:64:08-0b
+light.balon_links:
+  platform: hue
+  unique_id: 00:17:88:01:02:dd:d6:7f-0b
+light.stehlampe_klein:
+  platform: hue
+  unique_id: 00:17:88:01:02:91:9e:38-0b
+light.fado_1:
+  platform: hue
+  unique_id: 00:17:88:01:03:7f:9f:32-0b
+light.balon_rechts:
+  platform: hue
+  unique_id: 00:17:88:01:02:dd:bf:15-0b
+light.filo:
+  platform: hue
+  unique_id: 00:17:88:01:02:9b:56:28-0b
+light.deckenlampe_2:
+  platform: hue
+  unique_id: 00:17:88:01:02:de:6d:63-0b
+media_player.wohnzimmer_apple_tv:
+  platform: apple_tv
+  unique_id: 95cc16f26ed8682dffe10749558c600592075b42eff06f0737e45e10c1175de2
+remote.wohnzimmer_apple_tv:
+  platform: apple_tv
+  unique_id: 95cc16f26ed8682dffe10749558c600592075b42eff06f0737e45e10c1175de2
+sensor.iphone_von_christian_battery_level:
+  platform: ios
+  unique_id: level_iphone_X
+sensor.iphone_von_christian_battery_state:
+  platform: ios
+  unique_id: state_iphone_X
+sensor.christians_ipad_battery_state:
+  platform: ios
+  unique_id: state_christians_ipad3
+sensor.christians_ipad_battery_level:
+  platform: ios
+  unique_id: level_christians_ipad-air
+sensor.christians_ipad_battery_state_2:
+  platform: ios
+  unique_id: state_christians_ipad-air
+sensor.christians_ipad_battery_level_2:
+  platform: ios
+  unique_id: level_christians_ipad3
+light.hue_color_candle_1:
+  platform: hue
+  unique_id: 00:17:88:01:02:90:f2:29-0b
+media_player.wohnzimmer_apple_tv_2:
+  platform: apple_tv
+  unique_id: 42ad461642999f94ae55c983d26686df5d32a3e9b855dc368f1e759361f9eb49
+remote.wohnzimmer_apple_tv_2:
+  platform: apple_tv
+  unique_id: 42ad461642999f94ae55c983d26686df5d32a3e9b855dc368f1e759361f9eb49

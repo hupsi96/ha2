@@ -1,31 +1,34 @@
 - platform: yr
 
 - platform: rest
-  resource: http://192.168.2.100/api/wR6Y0DcyOm3T1mUA5g0VNfK04JZ6i04K61EpaFSa/sensors/4
+  resource: http://192.168.2.117/api/wR6Y0DcyOm3T1mUA5g0VNfK04JZ6i04K61EpaFSa/sensors/4
   value_template: '{{ value_json.state.temperature | float / 100 }}'
   unit_of_measurement: °C
   name: 'Zimmer Temperatur'
 
 - platform: rest
-  resource: http://192.168.2.100/api/wR6Y0DcyOm3T1mUA5g0VNfK04JZ6i04K61EpaFSa/sensors/6
+  resource: http://192.168.2.117/api/wR6Y0DcyOm3T1mUA5g0VNfK04JZ6i04K61EpaFSa/sensors/6
   value_template: '{{ value_json.state.lightlevel }}'
   unit_of_measurement: Lux
   name: 'Zimmer Helligkeit'
+  scan_interval: 5
 
 - platform: rest
-  resource: http://192.168.2.100/api/wR6Y0DcyOm3T1mUA5g0VNfK04JZ6i04K61EpaFSa/sensors/5
+  resource: http://192.168.2.117/api/wR6Y0DcyOm3T1mUA5g0VNfK04JZ6i04K61EpaFSa/sensors/5
   value_template: '{{ value_json.state.presence }}'
   name: 'Zimmer Bewegung'
-  scan_interval: 2
+  scan_interval: 4
 
 - platform: rest
-  resource: http://192.168.2.100/api/wR6Y0DcyOm3T1mUA5g0VNfK04JZ6i04K61EpaFSa/sensors/5
+  resource: http://192.168.2.117/api/wR6Y0DcyOm3T1mUA5g0VNfK04JZ6i04K61EpaFSa/sensors/5
   value_template: '{{ value_json.config.battery }}'
   unit_of_measurement: '%'
   scan_interval: 10000
   name: 'Bewegungsmelder Akku'
 
 - platform: rest
-  resource: http://192.168.2.100/api/wR6Y0DcyOm3T1mUA5g0VNfK04JZ6i04K61EpaFSa/sensors/1
+  resource: http://192.168.2.117/api/wR6Y0DcyOm3T1mUA5g0VNfK04JZ6i04K61EpaFSa/sensors/1
   value_template: '{{ value_json.state.daylight }}'
   name: 'Tageslicht'
+
+- platform: cpuspeed

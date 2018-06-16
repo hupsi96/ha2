@@ -15,10 +15,54 @@
       platform: state
       entity_id: sensor.zimmer_bewegung
       to: 'True'
+    condition:
+      condition: and
+      conditions:
+        - condition: state
+          entity_id: group.licht_christian
+          state: 'off'
+        - condition: numeric_state
+          entity_id: sensor.zimmer_helligkeit
+          below: '1000'
     action:
-      service: group.turn_on
-      entity_id:
-        - group.bett
-      data:
-        brightness: 250
-        rgb_color: [255,150,0]
+      - service: light.turn_on
+        entity_id:
+          - light.regal
+          - light.schrank
+          - light.balon_links
+          - light.balon_rechts
+        data:
+          brightness: 250
+          rgb_color: [255,150,0]
+      - service: light.turn_on
+        entity_id:
+          - light.bett
+          - light.schreibtisch_led
+          - light.schreibtisch_lampe
+          - light.deckenlampe_1
+          - light.deckenlampe_2
+          - light.deckenlampe_3
+        data:
+          brightness: 250
+          #rgb_color: [255,255,255]
+          kelvin: 2500
+
+  - alias: 'Nachtmodus'
+    trigger:
+      platform: state
+      entity_id: sensor.zimmer_bewegung
+      to: 'True'
+    condition:
+      condition: state
+      entity_id: group.licht_christian
+      state: 'off'
+    action:
+      - service: light.turn_on
+        entity_id:
+          - light.bett
+        data:
+          brightness: 20
+          rgb_color: [255,255,255]
+      - delay: 00:00:20
+      - service: light.turn_off
+        entity_id: light.bett
