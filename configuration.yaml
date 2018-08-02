@@ -42,6 +42,8 @@ updater:
 
 # Discover some devices automatically
 discovery:
+  enable:
+    - homekit
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
@@ -76,11 +78,6 @@ cloud:
 weather:
   - platform: darksky
     api_key: a6e53c628698b3737cd023b2e9cc808e
-
-panel_iframe:
-  router:
-    title: 'Speedport'
-    url: 'http://192.168.2.1'
 
 light:
   platform: limitlessled
