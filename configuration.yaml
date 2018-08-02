@@ -69,6 +69,11 @@ tts:
 # Cloud
 cloud:
 
+# Weather data from DarkSky
+weather:
+  - platform: darksky
+    api_key: a6e53c628698b3737cd023b2e9cc808e
+
 light:
   platform: limitlessled
   bridges:
