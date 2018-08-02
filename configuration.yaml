@@ -18,6 +18,9 @@ homeassistant:
 
 # Enables the frontend
 frontend:
+  themes:
+    sad:
+      primary-color: blue
 
 # Enables configuration UI
 config:
