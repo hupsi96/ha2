@@ -91,6 +91,12 @@ light.bett:
   homebridge_visible: true
   assumed_state: false
 
+light.map:
+  emulated_hue_hidden: false
+  emulated_hue_name: map
+  homebridge_visible: true
+  assumed_state: false
+
 automation.nachtmodus:
   emulated_hue_hidden: false
   emulated_hue_name: Nachtmodus
