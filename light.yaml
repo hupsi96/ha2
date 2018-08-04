@@ -1,0 +1,26 @@
+platform: limitlessled
+  bridges:
+    - host: 192.168.2.105
+      version: 4
+      port: 8899
+      groups:
+      - number: 1
+        name: Regal
+        type: rgbw
+        fade: on
+      - number: 2
+        name: Schrank
+        type: rgbw
+        fade: on
+      - number: 3
+        name: Weltkarte
+        type: rgbw
+        fade: on
+    - host: 192.168.2.103
+      groups:
+      - number: 2
+        name: Schreibtisch_led
+        type: rgbww
+      - number: 1
+        name: Bett
+        type: rgbww
