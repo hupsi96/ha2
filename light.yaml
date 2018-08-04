@@ -24,3 +24,22 @@
       - number: 1
         name: Bett
         type: rgbww
+- platform: mqtt
+  #broker: 192.168.2.199
+  name: map
+  state_topic: "zimmer/map/light/status"
+  command_topic: "zimmer/map/light/switch"
+  brightness_state_topic: "zimmer/map/brightness/status"
+  brightness_command_topic: "zimmer/map/brightness/set"
+  rgb_state_topic: "zimmer/map/rgb/status"
+  rgb_command_topic: "zimmer/map/rgb/set"
+  state_value_template: "{{ value_json.state }}"
+  brightness_value_template: "{{ value_json.brightness }}"
+  rgb_value_template: "{{ value_json.rgb | join(',') }}"
+  effect_command_topic: "zimmer/map/effect/set"
+  effect_state_topic: "zimmer/map/effect/status"
+  effect_list : [test1, test2, test3]
+  qos: 0
+  payload_on: "ON"
+  payload_off: "OFF"
+  optimistic: true
