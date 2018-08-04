@@ -38,7 +38,7 @@
   rgb_value_template: "{{ value_json.rgb | join(',') }}"
   effect_command_topic: "zimmer/map/effect/set"
   effect_state_topic: "zimmer/map/effect/status"
-  effect_list : "test1, test2", "test3"
+  effect_list : [test1, test2, test3]
   qos: 0
   payload_on: "ON"
   payload_off: "OFF"
