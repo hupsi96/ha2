@@ -58,6 +58,7 @@ bett:
 weltkarte:
   entities:
     - light.weltkarte
+    - light.map
 
 esstisch:
   entities:
