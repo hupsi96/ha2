@@ -27,8 +27,8 @@
 - platform: mqtt
   #broker: 192.168.2.199
   name: map
-  #state_topic: "zimmer/map/light/status"
-  #command_topic: "zimmer/map/light/switch"
+  state_topic: "zimmer/map/light/status"
+  command_topic: "zimmer/map/light/switch"
   #brightness_state_topic: "zimmer/map/brightness/status"
   #brightness_command_topic: "zimmer/map/brightness/set"
   #rgb_state_topic: "zimmer/map/rgb/status"
