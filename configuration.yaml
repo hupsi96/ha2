@@ -94,9 +94,9 @@ emulated_hue:
   expose_by_default: false
 
 mqtt:
-  broker: test.mosquitto.org
-  port: 8883
-  certificate: /home/homeassistant/.homeassistant/mosquitto.org.crt
+  broker: 192.168.2.128
+  #port: 8883
+  #certificate: /home/homeassistant/.homeassistant/mosquitto.org.crt
 
 group: !include groups.yaml
 automation: !include automations.yaml
