@@ -41,4 +41,4 @@
   qos: 0
   payload_on: "ON"
   payload_off: "OFF"
-  optimistic: false
+  optimistic: true
