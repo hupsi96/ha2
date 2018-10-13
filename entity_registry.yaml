@@ -106,3 +106,7 @@ sensor.iphone_von_christian_battery_level_2:
   name:
   platform: ios
   unique_id: level_iphone_von_christian
+media_player.50pus730312:
+  name:
+  platform: cast
+  unique_id: 2d78cd63-07ef-35ff-486f-8f6a1fa39a7a
