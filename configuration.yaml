@@ -90,7 +90,7 @@ media_player:
     mac: !secret tvObenMac
   - platform: philips_js
     host: 192.168.2.115
-    api_version: 4
+    api_version: 3
 
 emulated_hue:
   host_ip: 192.168.2.114
