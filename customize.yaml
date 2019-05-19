@@ -43,6 +43,9 @@ group.flur:
 group.sensor:
   friendly_name: Sensor
 
+group.project:
+  friendly_name: Project
+
 ###### MEDIA ##########
 
 
