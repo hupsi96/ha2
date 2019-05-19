@@ -37,8 +37,31 @@
   rgb_value_template: "{{ value_json.rgb | join(',') }}"
   effect_command_topic: "zimmer/map/effect/set"
   effect_state_topic: "zimmer/map/effect/status"
-  effect_list : [fade1, fade3, fade5, fade10, weather]
+  effect_list : [slow, medium, fast]
   qos: 0
   payload_on: "ON"
   payload_off: "OFF"
   optimistic: true
+- platform: mqtt
+  name: project
+  state_topic: "zimmer/project/light/status"
+  command_topic: "zimmer/project/light/switch"
+  brightness_state_topic: "zimmer/project/brightness/status"
+  brightness_command_topic: "zimmer/project/brightness/set"
+  rgb_state_topic: "zimmer/project/rgb/status"
+  rgb_command_topic: "zimmer/project/rgb/set"
+  state_value_template: "{{ value_json.state }}"
+  brightness_value_template: "{{ value_json.brightness }}"
+  rgb_value_template: "{{ value_json.rgb | join(',') }}"
+  effect_command_topic: "zimmer/project/effect/set"
+  effect_state_topic: "zimmer/project/effect/status"
+  effect_list : [slow, medium, fast]
+  qos: 0
+  payload_on: "ON"
+  payload_off: "OFF"
+  optimistic: true
+  schema: json
+  brightness: true
+  rgb: true
+  white_value: true
+  white_value_comand_topic: "zimmer/project/white/set"

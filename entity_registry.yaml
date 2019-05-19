@@ -110,3 +110,15 @@ media_player.50pus730312:
   name:
   platform: cast
   unique_id: 2d78cd63-07ef-35ff-486f-8f6a1fa39a7a
+light.hue_color_lamp_1:
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:04:d3:a8:40-0b
+media_player.wohnzimmer:
+  name:
+  platform: sonos
+  unique_id: RINCON_7828CACADB8801400
+light.onoff_plug_1:
+  name:
+  platform: hue
+  unique_id: 7c:b0:3e:aa:0a:03:2b:9b-03
