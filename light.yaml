@@ -65,3 +65,4 @@
   rgb: true
   white_value: true
   white_value_comand_topic: "zimmer/project/white/set"
+  white_value_state_topic: "zimmer/project/white/status"
