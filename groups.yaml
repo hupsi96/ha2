@@ -122,3 +122,6 @@ modus:
     - automation.tagmodus
     - automation.nachtmodus
 
+poject:
+  entities:
+    - light.project
