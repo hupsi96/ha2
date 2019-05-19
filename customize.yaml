@@ -97,6 +97,12 @@ light.map:
   homebridge_visible: true
   assumed_state: false
 
+light.project:
+  emulated_hue_hidden: false
+  emulated_hue_name: map
+  homebridge_visible: true
+  assumed_state: false
+
 automation.nachtmodus:
   emulated_hue_hidden: false
   emulated_hue_name: Nachtmodus
