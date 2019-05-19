@@ -66,3 +66,5 @@
   white_value: true
   white_value_comand_topic: "zimmer/project/white/set"
   white_value_state_topic: "zimmer/project/white/status"
+  color_temp_command_topic: "zimmer/project/temp/set"
+  color_temp_state_topic: "zimmer/project/temp/status"
