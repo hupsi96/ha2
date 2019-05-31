@@ -68,3 +68,30 @@
   white_value_state_topic: "zimmer/project/white/status"
   color_temp_command_topic: "zimmer/project/temp/set"
   color_temp_state_topic: "zimmer/project/temp/status"
+
+- platform: mqtt
+  name: project2
+  state_topic: "zimmer/project2/light/status"
+  command_topic: "zimmer/project2/light/switch"
+  brightness_state_topic: "zimmer/project2/brightness/status"
+  brightness_command_topic: "zimmer/project2/brightness/set"
+  rgb_state_topic: "zimmer/project2/rgb/status"
+  rgb_command_topic: "zimmer/project2/rgb/set"
+  state_value_template: "{{ value_json.state }}"
+  brightness_value_template: "{{ value_json.brightness }}"
+  rgb_value_template: "{{ value_json.rgb | join(',') }}"
+  effect_command_topic: "zimmer/project2/effect/set"
+  effect_state_topic: "zimmer/project2/effect/status"
+  effect_list : [slow, medium, fast]
+  qos: 0
+  payload_on: "ON"
+  payload_off: "OFF"
+  optimistic: true
+  schema: json
+  brightness: true
+  rgb: true
+  white_value: true
+  white_value_comand_topic: "zimmer/project2/white/set"
+  white_value_state_topic: "zimmer/project2/white/status"
+  color_temp_command_topic: "zimmer/project2/temp/set"
+  color_temp_state_topic: "zimmer/project2/temp/status"
