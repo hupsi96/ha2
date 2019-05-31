@@ -99,7 +99,13 @@ light.map:
 
 light.project:
   emulated_hue_hidden: false
-  emulated_hue_name: map
+  emulated_hue_name: project
+  homebridge_visible: true
+  assumed_state: false
+
+light.project2:
+  emulated_hue_hidden: false
+  emulated_hue_name: project2
   homebridge_visible: true
   assumed_state: false
 
