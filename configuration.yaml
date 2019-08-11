@@ -89,7 +89,7 @@ media_player:
     port: 8001
     mac: !secret tvObenMac
   - platform: philips_js
-    host: 192.168.2.115
+    host: 192.168.2.125
     name: Fernseher
     api_version: 5
 
