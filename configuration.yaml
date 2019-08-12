@@ -83,7 +83,7 @@ media_player:
     mac: !secret tvObenMac
 
 emulated_hue:
-  host_ip: 192.168.2.114
+  #host_ip: 192.168.2.114
   expose_by_default: false
 
 mqtt:
